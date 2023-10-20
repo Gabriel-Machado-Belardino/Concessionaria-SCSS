@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.containerPaginas {
+  width: 100%;
+  display: flex;
+  background-color: aqua;
+  align-items: center;
+  text-align: center;
+}
+
+.paginas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.paginas li {
+  list-style: none;
+  padding: 2rem;
+}
+
+.homeContainer {
+  width: 100vw;
+  height: 90vh;
+  background-image: url(https://uploads.vrum.com.br/2022/12/c18fe1f2-showroom-concessionaria-fiat-automax-carros-em-exposicao-vista-do-alto.jpg);
+}
+
+.carousel {
+  max-height: 3em;
+}
+
+.imgCarrosel {
+  width: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(202, 202, 202, 0.6);
+  width: 10 em;
+}
+
+li {
+  color: Red;
+}/*# sourceMappingURL=paginaFolhaEstilo.css.map */
