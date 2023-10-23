@@ -23,23 +23,39 @@
   padding: 2rem;
 }
 
-.homeContainer {
-  width: 100vw;
-  height: 90vh;
-  background-image: url(https://uploads.vrum.com.br/2022/12/c18fe1f2-showroom-concessionaria-fiat-automax-carros-em-exposicao-vista-do-alto.jpg);
-}
-
-.carousel {
-  max-height: 3em;
-}
-
-.imgCarrosel {
+.container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
 }
 
-.carousel-control-prev, .carousel-control-next {
-  background-color: rgba(202, 202, 202, 0.6);
-  width: 10 em;
+#carouselExampleAutoplaying {
+  width: 90vw;
+  height: 80vh;
+  max-height: 50vw;
+}
+#carouselExampleAutoplaying .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+#carouselExampleAutoplaying img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  height: 100%;
+  opacity: 100;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 li {
