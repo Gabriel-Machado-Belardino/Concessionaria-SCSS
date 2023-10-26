@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: brown;
+	background-color: rgb(83, 93, 99);
 }
 .container {
 	display: flex;
@@ -16,10 +16,9 @@ body {
 .section {
 	display: flex;
 	flex-direction: row;
-	//Centralizar itens no centro
 	align-items: center;
 	padding: 20px;
-	border-radius: 5px;
+	border-radius: 2.3em;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	margin-bottom: 20px;
 	height: 80vh;
