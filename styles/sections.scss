@@ -1,39 +1,67 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-body{
-    background-color: brown;
+body {
+	background-color: brown;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.section{
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    height: 80vh;
-    width: 93vw;
-    // h2{
-    //     margin: 0;
-    //     padding: 0;
-    //     font-size: 20px;
-    //     font-weight: 600;
-    //     color: #333;
-    // }
-    // p{
-    //     margin: 0;
-    //     padding: 0;
-    //     font-size: 14px;
-    //     color: #666;
-    // }
-    // .btn{
-    //     margin-top: 10px;
-    // }
+.section {
+	display: flex;
+	flex-direction: row;
+	//Centralizar itens no centro
+	align-items: center;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	height: 80vh;
+	width: 93vw;
+
+	.item {
+		width: 47%;
+		padding: 20px;
+		margin: 0 1.5%;
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 10%;
+		}
+
+		h1 {
+			font-size: 4em;
+			margin-bottom: 0.7em;
+		}
+
+		p {
+			font-size: 1.7em;
+		}
+	}
+}
+
+.actions {
+	margin: 1.3em 0px; /* Define a distância do topo */
+
+	.btn-home {
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: #ff9900; /* Cor de fundo do botão */
+		color: #fff; /* Cor do texto do botão */
+		text-decoration: none;
+		border-radius: 5px;
+		transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+		margin-left: 2em; /* Define a distância da borda esquerda */
+
+		&:hover {
+			background-color: #ff6600; /* Cor de fundo ao passar o mouse sobre o botão */
+		}
+	}
 }

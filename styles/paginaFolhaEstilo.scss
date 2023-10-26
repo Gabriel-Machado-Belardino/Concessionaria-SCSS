@@ -1,65 +1,90 @@
 $cor: Red;
 $backgroundMainImage: url(https://uploads.vrum.com.br/2022/12/c18fe1f2-showroom-concessionaria-fiat-automax-carros-em-exposicao-vista-do-alto.jpg);
 
-*{
-    padding: 0;
-    margin: 0;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-.containerPaginas{
-    width: 100%;
-    display: flex;
-    background-color: aqua;
-    align-items: center;
-    text-align: center;
+// .containerPaginas{
+//     width: 100%;
+//     display: flex;
+//     background-color: aqua;
+//     align-items: center;
+//     text-align: center;
+// }
+.containerPaginas {
+	background-color: #333; /* Cor de fundo da barra de navegação */
+	padding: 10px 0; /* Espaçamento interno superior e inferior */
+
+	.paginas {
+		list-style: none; /* Remove os marcadores da lista */
+		padding: 0;
+		display: flex;
+		justify-content: center; /* Centraliza os itens horizontalmente */
+
+		li {
+			margin: 0 20px; /* Espaçamento entre os itens */
+
+			a {
+				text-decoration: none;
+				color: #fff; /* Cor do texto dos links */
+				font-size: 18px;
+				transition: color 0.3s; /* Transição suave para a cor do texto */
+
+				&:hover {
+					color: #ff9900; /* Cor do texto ao passar o mouse sobre o link */
+				}
+			}
+		}
+	}
 }
 
-.paginas{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    li{
-        list-style: none;
-        padding: 2rem;
-    }
+// .paginas{
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     li{
+//         list-style: none;
+//         padding: 2rem;
+//     }
+// }
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 2rem;
+}
+#carouselExampleAutoplaying {
+	width: 90vw;
+	height: 80vh;
+	max-height: 50vw;
+	.carousel-inner {
+		width: 100%;
+		height: 100%;
+	}
 }
 
-.container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-   
-}
-#carouselExampleAutoplaying{
-    width: 90vw;
-    height: 80vh;
-    max-height: 50vw;
-    .carousel-inner{
-        width: 100%;
-        height: 100%;
-    }
+#carouselExampleAutoplaying img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-#carouselExampleAutoplaying img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.carousel-control-prev,
+.carousel-control-next {
+	width: 5%;
+	height: 100%;
+	opacity: 100;
+	z-index: 5;
+	background-color: rgba($color: #000000, $alpha: 0.6);
 }
 
-.carousel-control-prev, 
-.carousel-control-next{
-    width: 5%;
-    height: 100%;
-    opacity: 100;
-    z-index: 5;
-    background-color: rgba($color: #000000, $alpha: 0.6)
-}
-
-li{
-    color: $cor;
+li {
+	color: $cor;
 }

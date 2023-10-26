@@ -1,26 +1,30 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
 }
 
 .containerPaginas {
-  width: 100%;
-  display: flex;
-  background-color: aqua;
-  align-items: center;
-  text-align: center;
+  background-color: #333; /* Cor de fundo da barra de navegação */
+  padding: 10px 0; /* Espaçamento interno superior e inferior */
 }
-
-.paginas {
-  width: 100%;
+.containerPaginas .paginas {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* Centraliza os itens horizontalmente */
 }
-.paginas li {
-  list-style: none;
-  padding: 2rem;
+.containerPaginas .paginas li {
+  margin: 0 20px; /* Espaçamento entre os itens */
+}
+.containerPaginas .paginas li a {
+  text-decoration: none;
+  color: #fff; /* Cor do texto dos links */
+  font-size: 18px;
+  transition: color 0.3s; /* Transição suave para a cor do texto */
+}
+.containerPaginas .paginas li a:hover {
+  color: #ff9900; /* Cor do texto ao passar o mouse sobre o link */
 }
 
 .container {
